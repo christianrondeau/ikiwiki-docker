@@ -50,13 +50,4 @@ send -- "wiki\r"
 expect "wiki\r
 \[1mWhat revision control system to use? \[0mgit"
 send -- "\r\r"
-expect "Which user (wiki account or openid) will be admin?"
-send -- "\r"
-expect "\r
-Creating wiki admin ikiwiki ...\r
-Choose a password: "
-send -- "ikiwiki\r"
-expect "\r
-Confirm password: "
-send -- "ikiwiki\r"
-expect eof
+
