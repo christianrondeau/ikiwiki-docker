@@ -53,24 +53,7 @@ send -- "\r"
 expect -exact "\r
 \[1mWhich user (wiki account or openid) will be admin? \[0mikiwiki"
 send -- "\r"
-expect -exact "\r
-\r
-\r
-Setting up wikiwiki ...\r
-Importing /home/ikiwiki/wikiwiki into git\r
-Initialized empty shared Git repository in /home/ikiwiki/wikiwiki.git/\r
-Initialized empty Git repository in /home/ikiwiki/wikiwiki/.git/\r
-\[master (root-commit) bc5232c\] initial commit\r
- 1 file changed, 1 insertion(+)\r
- create mode 100644 .gitignore\r
-Counting objects: 3, done.\r
-Writing objects:  33% (1/3)   \rWriting objects:  66% (2/3)   \rWriting objects: 100% (3/3)   \rWriting objects: 100% (3/3), 220 bytes | 0 bytes/s, done.\r
-Total 3 (delta 0), reused 0 (delta 0)\r
-To /home/ikiwiki/wikiwiki.git\r
- * \[new branch\]      master -> master\r
-Directory /home/ikiwiki/wikiwiki is now a clone of git repository /home/ikiwiki/wikiwiki.git\r
-\r
-\r
+expect "\r
 Creating wiki admin ikiwiki ...\r
 Choose a password: "
 send -- "ikiwiki\r"
