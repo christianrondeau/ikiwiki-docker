@@ -47,16 +47,12 @@ spawn ikiwiki --setup /etc/ikiwiki/auto.setup
 match_max 100000
 expect "\[1mWhat will the wiki be named? \[0mwiki"
 send -- "wiki\r"
-expect "wiki\r
 \[1mWhat revision control system to use? \[0mgit"
 send -- "\r"
 expect "Which user (wiki account or openid) will be admin?"
 send -- "ikiwiki\r"
-expect "\r
-Creating wiki admin ikiwiki ...\r
-Choose a password: "
+expect "Choose a password: "
 send -- "ikiwiki\r"
-expect "\r
-Confirm password: "
+expect "Confirm password:"
 send -- "ikiwiki\r"
 expect eof
