@@ -52,3 +52,11 @@ expect "wiki\r
 send -- "\r"
 expect "Which user (wiki account or openid) will be admin?"
 send -- "ikiwiki\r"
+expect "\r
+Creating wiki admin ikiwiki ...\r
+Choose a password: "
+send -- "ikiwiki\r"
+expect "\r
+Confirm password: "
+send -- "ikiwiki\r"
+expect eof
