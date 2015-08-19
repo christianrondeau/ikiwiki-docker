@@ -42,7 +42,7 @@ if {$force_conservative} {
 # -Don
 
 
-set timeout 3
+set timeout -1
 spawn ikiwiki --setup /etc/ikiwiki/auto.setup
 match_max 100000
 expect "What will the wiki be named?"
