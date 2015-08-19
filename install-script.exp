@@ -49,6 +49,6 @@ expect "\[1mWhat will the wiki be named? \[0mwiki"
 send -- "wiki\r"
 expect "wiki\r
 \[1mWhat revision control system to use? \[0mgit"
-send -- "\r\r"
+send -- "\r"
 expect "Which user (wiki account or openid) will be admin?"
 send -- "ikiwiki\r"
