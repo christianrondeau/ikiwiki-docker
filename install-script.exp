@@ -45,19 +45,19 @@ if {$force_conservative} {
 set timeout -1
 spawn ikiwiki --setup /etc/ikiwiki/auto.setup
 match_max 100000
-expect -exact "\[1mWhat will the wiki be named? \[0mwiki"
+expect "\[1mWhat will the wiki be named? \[0mwiki"
 send -- "wiki\r"
-expect -exact "wiki\r
+expect "wiki\r
 \[1mWhat revision control system to use? \[0mgit"
 send -- "\r"
-expect -exact "\r
+expect "\r
 \[1mWhich user (wiki account or openid) will be admin? \[0mikiwiki"
 send -- "\r"
 expect "\r
 Creating wiki admin ikiwiki ...\r
 Choose a password: "
 send -- "ikiwiki\r"
-expect -exact "\r
+expect "\r
 Confirm password: "
 send -- "ikiwiki\r"
 expect eof
